@@ -1,0 +1,118 @@
+
+2022.11.26 20:39:01.899  SYSTEM: Open App | Pm: Promotic9.0.20.0 (23.02.2022) 64bit | OS: Windows 10 | PC: desktop-ic2rd1d (desktop-ic2rd1d) | RDP: 0 | LastStop: Ok
+2022.11.26 20:39:02.075  SYSTEM: App: Promotic9.0.20 | Licence: 0
+2022.11.26 20:39:02.092  SYSTEM: CountersDt = PmaPanel:2, PmaData:1, PmaWeb:1, PmaWebInfo:1, PmaWorkspace:1, PmaGlobal:3, All:9
+2022.11.26 20:39:02.094  SYSTEM: Open App Done (0.219 s)
+2022.11.26 20:39:02.127  SYSTEM: Thread: Main=9068
+2022.11.26 20:39:02.128  SYSTEM: XmlClient: WinHttp
+2022.11.26 20:39:02.133  SYSTEM: Thread: XmlClient=4672
+2022.11.26 20:39:02.197  SYSTEM: Thread: SoundServer=3764
+2022.11.26 20:39:02.201  SYSTEM: Thread: AlarmServer=22856
+2022.11.26 20:39:02.204  SYSTEM: Start Rt-Pre (PmInstance from RAM)
+2022.11.26 20:39:02.205  SYSTEM: Start Rt-Start
+2022.11.26 20:39:02.208  SYSTEM: New directory: C:\Promotic\Apps\RSsP_Enviro\Resource
+2022.11.26 20:39:02.208  SYSTEM: New directory: C:\Promotic\Apps\RSsP_Enviro\Data
+2022.11.26 20:39:02.210  SYSTEM: Start Rt-0
+2022.11.26 20:39:02.210  SYSTEM: Start Rt-1
+2022.11.26 20:39:02.211  SYSTEM: Start Rt-2a
+2022.11.26 20:39:02.211  SYSTEM: Start Rt-2b
+2022.11.26 20:39:02.212  SYSTEM: Start Rt-2c
+2022.11.26 20:39:02.212  SYSTEM: Thread: WebServer1=10344
+2022.11.26 20:39:02.216  SYSTEM: Start WebServer1_80
+2022.11.26 20:39:02.266  SYSTEM: Start Rt-2
+2022.11.26 20:39:02.266  SYSTEM: Start Rt-Done (0.141 s)
+2022.11.26 20:39:02.267  SYSTEM: CountersRt = PmaPanel:2, PmaData:1, PmaWeb:1, PmaWebInfo:1, PmaWorkspace:1, PmaGlobal:3, All:9
+2022.11.26 20:39:23.540  SYSTEM: StopProject: Pm.AppStop
+2022.11.26 20:39:23.541  SYSTEM: StopProject: Stop
+2022.11.26 20:39:23.541  SYSTEM: StopProject: Executing
+2022.11.26 20:39:23.545  SYSTEM: Stop WebServer1_80
+2022.11.26 20:39:23.545  SYSTEM: Stop Rt-Pre
+2022.11.26 20:39:23.556  SYSTEM: Stop Rt-Pre2
+2022.11.26 20:39:23.557  SYSTEM: Stop Rt
+2022.11.26 20:39:23.558  SYSTEM: Uptime=0/00:00:21 (21s)
+2022.11.26 20:39:23.558  SYSTEM: INFO/Statistics = Script-Run:149, WebServer:1, Tree-Pma:6, Tree-Pmg:9, Panel-Refresh:87, Panel:2, Ws:1, Pm:6/6, PmMap:19, PmUser-Web:1/1, Tm-Req:2/11, Tm-Tick:527
+2022.11.26 20:39:23.558  SYSTEM: INFO/System = CPU system (%):33, CPU process (%):1, Memory used (kB):4426948, Memory free (kB):6191436, Memory total (kB):16658020, Kernel objects:383, GDI objects/max:32/53, USER objects/max:40/56
+2022.11.26 20:39:23.558  SYSTEM: INFO/WebClient = Subsystem:WinHttp, Async requests - pool size:1
+2022.11.26 20:39:23.558  SYSTEM: INFO/WebServer1_80 = Nmb Requests Total:2, Nmb Requests Active:0/0, Nmb Requests Max:2, Nmb Answer OK:1, Nmb Small Timeouts:1, Server type:http internal, WebThreadType:1, SmallTimeout:10, BigTimeout:30
+2022.11.26 20:39:23.558  SYSTEM: Stop Rt-0
+2022.11.26 20:39:23.562  SYSTEM: Stop Rt-1
+2022.11.26 20:39:23.575  SYSTEM: Close App
+2022.11.26 20:39:23.617  SYSTEM: Close App Done
+2022.11.26 20:39:23.625  SYSTEM: Stop Rt-Done
+
+2022.11.26 20:39:26.786  SYSTEM: Open App | Pm: Promotic9.0.20.0 (23.02.2022) 64bit | OS: Windows 10 | PC: desktop-ic2rd1d (desktop-ic2rd1d) | RDP: 0 | LastStop: Ok
+2022.11.26 20:39:26.932  SYSTEM: App: Promotic9.0.20 | Licence: 0
+2022.11.26 20:39:26.951  SYSTEM: CountersDt = PmaPanel:2, PmaData:1, PmaWeb:1, PmaWebInfo:1, PmaWorkspace:1, PmaGlobal:3, All:9
+2022.11.26 20:39:26.954  SYSTEM: Open App Done (0.188 s)
+2022.11.26 20:39:26.991  SYSTEM: Thread: Main=21436
+2022.11.26 20:39:26.993  SYSTEM: XmlClient: WinHttp
+2022.11.26 20:39:26.997  SYSTEM: Thread: XmlClient=11744
+2022.11.26 20:39:27.065  SYSTEM: Thread: SoundServer=20820
+2022.11.26 20:39:27.068  SYSTEM: Thread: AlarmServer=15252
+2022.11.26 20:39:27.071  SYSTEM: Start Rt-Pre (PmInstance from RAM)
+2022.11.26 20:39:27.072  SYSTEM: Start Rt-Start
+2022.11.26 20:39:27.077  SYSTEM: Start Rt-0
+2022.11.26 20:39:27.077  SYSTEM: Start Rt-1
+2022.11.26 20:39:27.078  SYSTEM: Start Rt-2a
+2022.11.26 20:39:27.078  SYSTEM: Start Rt-2b
+2022.11.26 20:39:27.079  SYSTEM: Start Rt-2c
+2022.11.26 20:39:27.079  SYSTEM: Thread: WebServer1=1188
+2022.11.26 20:39:27.083  SYSTEM: Start WebServer1_80
+2022.11.26 20:39:27.130  SYSTEM: Start Rt-2
+2022.11.26 20:39:27.130  SYSTEM: Start Rt-Done (0.14 s)
+2022.11.26 20:39:27.131  SYSTEM: CountersRt = PmaPanel:2, PmaData:1, PmaWeb:1, PmaWebInfo:1, PmaWorkspace:1, PmaGlobal:3, All:9
+2022.11.26 20:39:29.728  SYSTEM: StopProject: Pm.AppStop
+2022.11.26 20:39:29.729  SYSTEM: StopProject: Stop
+2022.11.26 20:39:29.730  SYSTEM: StopProject: Executing
+2022.11.26 20:39:29.735  SYSTEM: Stop WebServer1_80
+2022.11.26 20:39:29.736  SYSTEM: Stop Rt-Pre
+2022.11.26 20:39:29.749  SYSTEM: Stop Rt-Pre2
+2022.11.26 20:39:29.750  SYSTEM: Stop Rt
+2022.11.26 20:39:29.750  SYSTEM: Uptime=0/00:00:03 (3s)
+2022.11.26 20:39:29.750  SYSTEM: INFO/Statistics = Script-Run:136, Tree-Pma:6, Tree-Pmg:9, Panel-Refresh:13, Panel:2, Ws:1, Pm:6/6, PmMap:23, Tm-Req:2/11, Tm-Tick:62
+2022.11.26 20:39:29.751  SYSTEM: INFO/System = CPU system (%):41, Memory used (kB):4446452, Memory free (kB):6221900, Memory total (kB):16658020, Kernel objects:381, GDI objects/max:32/53, USER objects/max:39/56
+2022.11.26 20:39:29.751  SYSTEM: INFO/WebClient = Subsystem:WinHttp, Async requests - pool size:1
+2022.11.26 20:39:29.751  SYSTEM: INFO/WebServer1_80 = Nmb Requests Active:0/0, Server type:http internal, WebThreadType:1, SmallTimeout:10, BigTimeout:30
+2022.11.26 20:39:29.751  SYSTEM: Stop Rt-0
+2022.11.26 20:39:29.754  SYSTEM: Stop Rt-1
+2022.11.26 20:39:29.765  SYSTEM: Close App
+2022.11.26 20:39:29.807  SYSTEM: Close App Done
+2022.11.26 20:39:29.814  SYSTEM: Stop Rt-Done
+
+2022.11.26 20:40:36.093  SYSTEM: Open App | Pm: Promotic9.0.20.0 (23.02.2022) 64bit | OS: Windows 10 | PC: desktop-ic2rd1d (desktop-ic2rd1d) | RDP: 0 | LastStop: Ok
+2022.11.26 20:40:36.294  SYSTEM: App: Promotic9.0.20 | Licence: 0
+2022.11.26 20:40:36.312  SYSTEM: CountersDt = PmaPanel:2, PmaData:1, PmaWeb:1, PmaWebInfo:1, PmaWorkspace:1, PmaGlobal:3, All:9
+2022.11.26 20:40:36.314  SYSTEM: Open App Done (0.281 s)
+2022.11.26 20:40:36.339  SYSTEM: Thread: Main=15868
+2022.11.26 20:40:36.341  SYSTEM: XmlClient: WinHttp
+2022.11.26 20:40:36.344  SYSTEM: Thread: XmlClient=10412
+2022.11.26 20:40:36.406  SYSTEM: Thread: SoundServer=17172
+2022.11.26 20:40:36.411  SYSTEM: Thread: AlarmServer=23096
+2022.11.26 20:40:36.414  SYSTEM: Start Rt-Pre (PmInstance from RAM)
+2022.11.26 20:40:36.414  SYSTEM: Start Rt-Start
+2022.11.26 20:40:36.420  SYSTEM: Start Rt-0
+2022.11.26 20:40:36.421  SYSTEM: Start Rt-1
+2022.11.26 20:40:36.422  SYSTEM: Start Rt-2a
+2022.11.26 20:40:36.422  SYSTEM: Start Rt-2b
+2022.11.26 20:40:36.422  SYSTEM: Start Rt-2c
+2022.11.26 20:40:36.423  SYSTEM: Thread: WebServer1=11552
+2022.11.26 20:40:36.427  SYSTEM: Start WebServer1_80
+2022.11.26 20:40:36.484  SYSTEM: Start Rt-2
+2022.11.26 20:40:36.484  SYSTEM: Start Rt-Done (0.141 s)
+2022.11.26 20:40:36.484  SYSTEM: CountersRt = PmaPanel:2, PmaData:1, PmaWeb:1, PmaWebInfo:1, PmaWorkspace:1, PmaGlobal:3, All:9
+2022.11.26 20:40:50.848  SYSTEM: StopProject: Stop
+2022.11.26 20:40:50.849  SYSTEM: StopProject: Executing
+2022.11.26 20:40:50.851  SYSTEM: Stop WebServer1_80
+2022.11.26 20:40:50.851  SYSTEM: Stop Rt-Pre
+2022.11.26 20:40:50.868  SYSTEM: Stop Rt-Pre2
+2022.11.26 20:40:50.869  SYSTEM: Stop Rt
+2022.11.26 20:40:50.870  SYSTEM: Uptime=0/00:00:14 (14s)
+2022.11.26 20:40:50.870  SYSTEM: INFO/Statistics = Script-Run:106, Tree-Pma:6, Tree-Pmg:9, Panel-Refresh:59, Panel:2, Ws:1, Pm:6/6, PmMap:15, Tm-Req:2/11, Tm-Tick:353
+2022.11.26 20:40:50.870  SYSTEM: INFO/System = CPU system (%):30, CPU process (%):1, Memory used (kB):4448384, Memory free (kB):6280840, Memory total (kB):16658020, Kernel objects:385, GDI objects/max:32/53, USER objects/max:39/56
+2022.11.26 20:40:50.871  SYSTEM: INFO/WebClient = Subsystem:WinHttp, Async requests - pool size:1
+2022.11.26 20:40:50.871  SYSTEM: INFO/WebServer1_80 = Nmb Requests Active:0/0, Server type:http internal, WebThreadType:1, SmallTimeout:10, BigTimeout:30
+2022.11.26 20:40:50.871  SYSTEM: Stop Rt-0
+2022.11.26 20:40:50.875  SYSTEM: Stop Rt-1
+2022.11.26 20:40:50.889  SYSTEM: Close App
+2022.11.26 20:40:50.942  SYSTEM: Close App Done
+2022.11.26 20:40:50.948  SYSTEM: Stop Rt-Done
