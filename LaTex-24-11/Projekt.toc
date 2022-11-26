@@ -1,0 +1,63 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {czech}{}
+\babel@toc {czech}{}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Seznam obr\'azk\r {u}}{2}{chapter*.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Seznam tabulek}{3}{chapter*.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}Zadání}{4}{chapter.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.1}Specifikace parkoviště}{4}{section.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.2}Specifikace dokumentace}{4}{section.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Analýza problému}{7}{chapter.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Dokumentace technologie}{9}{chapter.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Softwarová analýza}{10}{chapter.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}Obecná analýza}{10}{section.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}Analýza struktury vnějšího prostředí}{10}{section.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.3}Analýza funkcí}{10}{section.4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.4}Analýza komunikací}{10}{section.4.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.5}Analýza dokumentů}{10}{section.4.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.6}Analýza obsahu a struktury informací}{10}{section.4.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.7}Analýza toku informací}{10}{section.4.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.8}Analýza slabých míst}{10}{section.4.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Systémová specifikace}{11}{chapter.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.1}Výchozí situace a cíle}{11}{section.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.2}Vztah okolí k provozování systému}{11}{section.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.3}Funkční požadavky}{11}{section.5.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.4}Nefunkční (ostatní) požadavky}{11}{section.5.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.5}Uživatelská rozhraní}{11}{section.5.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.6}Chování za chybových situací}{11}{section.5.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.7}Požadavky na dokumentaci}{11}{section.5.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.8}Předávací podmínky}{11}{section.5.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.9}Přílohy}{11}{section.5.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}UML analýza}{12}{chapter.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {7}Závěr}{13}{chapter.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Literatura}{14}{chapter*.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {8}Přílohy}{15}{chapter.8}%
