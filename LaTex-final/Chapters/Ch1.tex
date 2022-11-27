@@ -1,0 +1,53 @@
+\chapter{Analýza problému}
+
+Jako semestrální projekt jsme si ve skupině vybrali ovládání světel lampy na základě různých environmentálních podmínek. Konkrétně se jedná o osvětlení parkoviště mezi budovou FEI a FNO (souřadnice 49.830987838430644, 18.160041318757802) o rozměrech zhruba přibližně 40x60 m. Naše řešení je centralizovaný systém s distribuovanou vizualizací. Za pomoci jednoho PC (případně i Raspberry Pi) zpracováváme data ze světel a senzorů na chtěné hodnoty a následně je posíláme jako příkazy na ovládání světel. Tento počítač pak posílá data pomocí UDP protokolu po síti, na kterou se lze připojit vizualizací. Kdyby se kdokoliv rozhodl tento systém uplatnit a chtěl by použít bezdrátovou komunikaci, pak bude systém spíše distribuovaný, neboť hlavní počítač bude posílat pouze data systému jednotlivých světel. 
+
+Rozhodli jsme se použít senzory VISIC620 od společnosti SICK. Volba padla právě na tento typ senzoru, protože je schopen snímat v podstatě všechny změny environmentálních podmínek. Používáme konkrétně alespoň čtyři senzory pro určení viditelnosti, ze kterých se vytváří průměrná hodnota viditelnosti, dle které systém reaguje na změny. Následně bude systémově ošetřeno, aby se při případném poškození senzoru (tzn. hodnoty se budou výrazně lišit), zobrazilo upozornění ve vizualizaci.\parencite{senzor}
+
+PC je propojeno se světly pomocí kabelů dle druhu světla, případně bezdrátově, dle možnosti daných světel. PC musí být připojeno k wifi za účelem vizualizace.
+
+% Nahrazeni realnym parkovištěm + souřadnice
+
+\begin{figure}[H]
+    \centering\includegraphics[width=.5\textwidth]{Figures/Mapa.png}   
+    \caption{Mapa parkoviště}
+    \label{Obr-Navrh-viz}
+\end{figure}
+
+Vizualizaci aplikace jsme se rozhodli realizovat v prostředí PROMOTIC. Budou dva účty -- administrátor a uživatel. Administrátor bude mít možnost měnit nastavení svítivosti světel v procentech pro každou hodinu pomocí posuvníků.
+
+V aplikaci (vizualizaci), v našem řešení jsme se rozhodli pro PROMOTIC, existují dva účty. Jeden účet je administrátora, který může měnit nastavení svítivosti světel v procentech pro každou hodinu pomocí posuvníků. V případě, že se zhorší viditelnost, svítivost se dle „závažnosti“ situace procentuálně zvýší. Systém je schopen reagovat téměř okamžitě, záleží tedy na programátorovi, jakou frekvenci vyčítání dat ze senzorů zvolí. Ve druhém účtu je možné pouze sledovat stav, tedy na kolik procent daná lampa svítí. V případě například energetické krize, svátků, je možné světla vypínačem vypnout pro úsporu energie. PROMOTIC není zásadní pro běh aplikace, můžeme využít i jiné vizualizační programy, pokud podporují komunikaci přes UDP protokol (např. LabVIEW). Ukládáme hodnoty senzorů při určování osvětlení, požadovanou intenzitu osvětlení administrátorem, tato data jsou pak sledována právě vizualizací a slouží pro zpětnou kontrolu funkčnosti. 
+
+
+Jako potencionální chyby řešení můžou být: 
+\begin{itemize}
+    \item vliv záškodníků na senzory
+    \item špatně (nedostatečně) nastavené hodnoty osvětlení ve vizualizaci adminem
+    \item delší počáteční ladění systému
+\end{itemize}
+
+
+% \begin{table}[htbp]
+% 	\centering
+% 	\caption{Definice I/O}
+% 	\begin{tabular}{ccccc}
+% 		\hline
+% 		I/O 
+%         & Název proměnné    &Datový typ & Popis \\ \hline
+% 		\multirow{3}{*}{I} 
+%         & BehLinky          & BOOL      & zapínání/vypínání běhu linky \\
+% 		& PaletaVysunuta    & BOOL      & snímač pro vysunutí palety \\ 
+% 		& Zrychleni   		& UINT      & volba rychlosti pásu \\ \hline
+%         \multirow{6}{*}{O} 
+% 		& Snimac            & BOOL      & snímač výrobků \\
+% 		& AplikatorFolie    & BOOL      & indikátor aplikátoru folie \\
+% 		& HorkovzdusnyFen   & BOOL      & indikátor horkovzdušného fénu \\
+% 		& VysouvaciRameno   & BOOL      & indikátor vysouvacího ramena \\
+% 		& PocetVyrobku      & UINT      & počítání výrobků \\
+% 		& PocetPalet        & UINT      & počítání palet \\ \hline
+% 	\end{tabular}
+%     \label{Tab-IO}
+% \end{table}
+
+
+\endinput

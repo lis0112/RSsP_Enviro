@@ -1,0 +1,148 @@
+%\chapter{Zadání}
+\chapter{Zadání} 
+\label{sec:Zadani}
+\section{Specifikace parkoviště}
+Ovládání světel lampy na základě různých enviro podmínek
+Aplikace bude měřit nějaké rozumné veličiny (tmu, déšť, vítr, smog) a z nich se
+vytvoří požadavek na přiměřené osvětlení parkoviště. Toto bude zasláno rozhodující
+aplikaci, jako v předchozím případě
+
+\section{Specifikace dokumentace}
+\begin{enumerate}[label=\arabic*)]
+    \item Analýza technologického řešení
+    
+    Na základě zadání je potřeba analyzovat hardware dané technologie, což znamená:
+    \begin{itemize}
+        \item volbu typu systému – distribuovaný, centralizovaný – třeba neopomenout důvod;
+        \item volbu senzorů;
+        \item zapojení – komunikace, řídících jednotek, silového vedení, aktuátorů, senzorů;
+        \item volbu silových jednotek, aktuátorů;
+        \item volbu vizualizační prostředí;
+        \item sledování a ukládání dat;
+        \item a jiné.
+    \end{itemize}
+    Výsledkem je sada výkresů subcelků, seznamy komponent, dokumentace komponent, zdroje
+informací.
+    \item Dokumentace technologie
+    
+    Zde je očekáván výstup ve formě výkresu celé technologie (případně její části). Cílem je zachytit podstatu celku a jeho částí, najít případné mezery v rámci komunikace.
+
+    Poznámka: K tvorbě výkresů lze využít vektorové programy (Autocad, CorelDraw, atd.), tužku s papírem a scannerem či jiné projektové aplikace.
+
+    \item Softwarová analýza
+    
+    Součástí softwarové analýzy je:
+    \begin{itemize}
+        \item Obecná analýza
+        \begin{itemize}[\tiny \ding{109}]
+            \item slovní forma
+        \end{itemize}
+        \item Analýza struktury vnějšího prostředí
+        \begin{itemize}[\tiny \ding{109}]
+            \item interakce lidí se softwarem – kdo a jak může se softwarem pracovat
+        \end{itemize}
+        \item Analýza funkcí
+        \begin{itemize}[\tiny \ding{109}]
+            \item funkce, které aplikace umožňuje
+            \item provádění funkcí – kdy a jak často se mají provádět
+        \end{itemize}
+        \item Analýza komunikací
+        \begin{itemize}[\tiny \ding{109}]
+            \item komunikace mezi jednotlivými částmi aplikace – jak komunikuje hlavní řídicí algoritmus
+            s ostatními částmi aplikace
+        \end{itemize}
+        \item Analýza dokumentů
+        \begin{itemize}[\tiny \ding{109}]
+            \item všechny dokumenty, které jsou generovány nebo používány v aplikaci – co budou dané
+            dokumenty obsahovat
+        \end{itemize}
+        \item Analýza obsahu a struktury informací
+        \begin{itemize}[\tiny \ding{109}]
+            \item typ a struktura dat v systému
+            \item frekvence zpracování a používané přenosy dat
+            \item délka uchovávání dat
+        \end{itemize}
+        \item Analýza toku informací
+        \begin{itemize}[\tiny \ding{109}]
+            \item toky dat mezi jednotlivými funkcemi
+            \item ochrana dat
+        \end{itemize}
+        \item Analýza slabých míst
+        \begin{itemize}[\tiny \ding{109}]
+            \item identifikace problémů, opomenutí a redundancí (funkcí i celého systému)
+        \end{itemize}
+    \end{itemize}
+
+    \item Systémová specifikace
+    
+    \begin{itemize}
+        \item Výchozí situace a cíle
+        \begin{itemize}[\tiny \ding{109}]
+            \item cíle a účel softwaru
+            \item aktuální funkcionalita – co lze nabídnout zákazníkovi
+        \end{itemize}
+
+        \item Vztah okolí k provozování systému
+        \begin{itemize}[\tiny \ding{109}]
+            \item podmínky pro provoz
+            \item jaká vnější data jsou potřeba
+            \item počet uživatelů, jejich činnosti, frekvence užití
+        \end{itemize}
+
+        \item Funkční požadavky
+        \begin{itemize}[\tiny \ding{109}]
+            \item seznam funkcí softwaru očekávané uživatelem – co očekáváme od technologie vzhledem k softwaru
+        \end{itemize}
+
+        \item Nefunkční (ostatní) požadavky
+        \begin{itemize}[\tiny \ding{109}]
+            \item požadavky na spolehlivost, přenositelnost
+            \item reakční časy a doba zpracování
+        \end{itemize}
+
+        \item Uživatelská rozhraní
+        \begin{itemize}[\tiny \ding{109}]
+            \item popis nedůležitějších bodů uživatelského rozhraní
+            \item popisuje způsob a prostředky, jimiž uživatel komunikuje se systémem
+        \end{itemize}
+
+        \item Chování za chybových situací
+        \begin{itemize}[\tiny \ding{109}]
+            \item rozbor vlivů různých chyb a požadované chovaní systému při jejich výskytu
+        \end{itemize}
+
+        \item Požadavky na dokumentaci
+        \begin{itemize}[\tiny \ding{109}]
+            \item referenční příručka, manuál, systémová dokumentace
+        \end{itemize}
+
+        \item Předávací podmínky
+        \begin{itemize}[\tiny \ding{109}]
+            \item návrh testů a způsobu kontroly pro každý požadavek samostatně
+        \end{itemize}
+
+        \item Přílohy
+        \begin{itemize}[\tiny \ding{109}]
+            \item pojmy, bibliografie atd.
+        \end{itemize}
+    \end{itemize}
+
+    \item UML analýza
+    
+    Analýza pomocí UML diagramů bude obsahovat minimálně tolik diagramů UML, kolik je studentů ve skupině (například: diagram užití, aktivitní diagram, diagram tříd, stavový diagram, sekvenční diagram, časování). Každý ze studentů tedy vytvoří alespoň jeden z těchto diagramů.
+
+    \item Výstupy projektu
+    
+    Jsou očekávány dva výstupy, jež budou uloženy pomocí GIT ve vzdáleném repositáři včetně všech dodatečných souborů a příloh. Výstupy jsou:
+    \begin{itemize}
+        \item dokument splňující veškeré body zadání 1 až 5 a obsahující titulní list, obsah, patřičné
+        formátování, schémata, obrázky, diagramy, přílohy a self-assessment (sebehodnocení přínosu
+        jednotlivých členů týmu – kdo co udělal);
+        \item prezentace výsledku projektu (28.11.2022).   
+    \end{itemize}
+
+\end{enumerate} 
+
+
+
+\endinput

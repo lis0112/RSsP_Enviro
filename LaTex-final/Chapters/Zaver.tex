@@ -1,0 +1,19 @@
+\chapter{Závěr a sebehodnocení}
+
+Naším úkolem bylo navrhnout řešení osvětlení parkoviště na základě změny environmentálních podmínek. Místo konkrétních měření vstupních veličin (mlha, déšť aj.), jsme se to rozhodli řešit jedním senzorem pro měření viditelnosti. Za pomoci tohoto senzoru nemusíme řešit individuální změny environmentálních podmínek, nýbrž jen zhoršenou viditelnost, na kterou reagují světla. 
+
+Kdybychom chtěli tento systém využít v praxi, bylo by potřeba nejdříve nasimulovat zhoršení viditelnosti a odzkoušení, jak moc mají světla v danou chvíli svítit. Po prvotním nastavení bude systém fungovat jednoduše. Administrátor nastaví (podle východu a západu slunce) v config souboru, popřípadě vizualizaci, výkon světla v procentech pro danou hodinu. Ten se bude o určitá nastavená procenta, dle zhoršené viditelnosti, zvyšovat automaticky. V budoucnu je možnost přidání stahování informací z meteostanice do config souboru, dle kterého se budou světla sama přenastavovat, bez nuceného fixního nastavení administrátorem.
+
+V případě, že bychom pracovali znovu na podobném projektu, tak bychom jej asi pojali lehce jinak. Více bychom se zaměřili na ochranu dat, šifrování, možnosti připojit systém pomocí aplikace do telefonu, která není zatím řešena a větší automatizací viz. druhý odstavec o nastavování západu a východu slunce. 
+
+Jaroslav Mihál, funkcí manažer, se podílel na hledání ideálního senzoru, představil a navrhnul prvotní vizualizaci jak v papírové formě, tak následně ji digitálně překreslil. Dále vytvořil stavový diagram a pomáhal ostatním členům při jejich dílčích úkonech. 
+
+Jáchym Alex Kolebacz hledal možnosti komunikace mezi vizualizací a dílčími prostředky, pomáhal Jaroslavu při analýze dané problematiky a několikrát se zapojil i při tvorbě dané aplikace. Rovněž dal do kupy celý technický dokument a diagram časování.
+
+Mariusz Lisztwan navrhnul a zkompletoval vizualizaci v prostředí PROMOTIC. Zlepšil původní návrh, doplnil jej o dva uživatelské účty a vytvořil diagram užití.
+
+Alec Smyček dostal za úkol vymyslet program, rozvržení jeho tříd a následnou implementaci. Svými připomínkami výrazně pomohl k doladění komunikace pomocí UDP a k celkové finalizaci projektu. K tomu vypracoval sekvenční diagram.
+
+Skupina se scházela zhruba co dva týdny, vždy ve čtvrtek a taktéž, když bylo potřeba řešit jen konkrétní části kdykoliv jindy přes týden. Každý pracoval svědomitě, jak jen nejlépe mohl, přestože každý měl na starosti i další projekty k řešení. Ke komunikaci, průběžnému sdílení souborů atp. 
+
+\endinput

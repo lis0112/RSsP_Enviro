@@ -1,0 +1,93 @@
+\chapter{Systémová specifikace}
+
+\section{Výchozí situace a cíle}
+
+Ovládání světel na parkovišti na základě environmentálních podmínek:
+\begin{enumerate}
+    \item Pomocí určení základní časové linie
+    \item Zesílení intenzity při nízké viditelnosti
+    \item Sledování dat ohledně viditelnosti
+\end{enumerate}
+
+Ovládání se provádí automaticky, případně se dá vypnout. Při automatickém ovládaní se světlo řídí nahraditelným configem.
+
+
+\section{Vztah okolí k provozování systému}
+
+Pouze stačí počáteční nastavení, systém následně funguje automaticky. S žádnými daty zvenčí se momentálně nepracuje.
+Počet sledujících téměř neomezený, figurují dva účty -- v jednom je umožněno pouze sledování, ve druhém užití se jednou měsíčně nastavují základní svítivosti.
+
+
+\section{Funkční požadavky} 
+
+\begin{itemize}
+    \item funkce pro sběr dat ze senzoru čte hodnoty z připojených senzorů
+    \item funkce naslouchače UDP (očekává zpětnou vazbu z vizualizace -- nastavení jendnotlivých světel a nastavení configu)
+    \item funkce vysílaní UDP (slouží pro zobrazení vizualizace)
+    \item funkce pro nastavení hodnoty na světlech
+    \item nastavení config souboru
+\end{itemize}
+
+\section{Nefunkční (ostatní) požadavky}
+
+Reakční časy by klidně mohli být i v řádech minut (když se jedná o automatickou funkci), avšak v případě vizualizace a ovládání by čas neměl přesáhnout minutu, především aby uživatel věděl, že je software funkční.
+Výpadek nás moc neovlivní -- data by měli být uložené na disku v config souboru, takže při opětovném spuštění je akorát zapotřebí načíst data ze senzoru a denní dobu a pak software pokračuje v předchozí funkci. (světla taky mohou vypadnout, takže proto je potřeba hned načíst čas s daty a poslat nové požadavky)
+
+
+\section{Uživatelská rozhraní}
+
+Vizualizace je vytvořena v SCADA systému PROMOTIC. PROMOTIC je komplexní SCADA objektový softwarový nástroj pro tvorbu aplikací, které monitorují, řídí a zobrazují technologické procesy v nejrůznějších oblastech průmyslu. Tento systém byl zvolen pro tvorbu vizualizační aplikace z důvodu jednoduchosti vytváření aplikací a dostupnosti. Tento vývojový software je k dispozici jako FREEWARE, tzn. zdarma ke stažení, ale s menším omezením. PROMOTIC obsahuje širokou paletu technologických obrázků, ikon atd. Výhodou je, že lze importovat vlastí obrázky do grafického panelu pro další užití. \parencite{PROMOTIC}
+
+Vizualizace se skládá z mapy svítidel a senzorů na parkovišti, kde se nachází ikony jednotlivých světel a senzorů, jejich označení a aktuální stav světla nebo senzoru dle barvy rozsvícení ikony. Dále se skládá z vizuální reprezentace procentuálního nastavení svítivosti a jeho hodnoty se zobrazují dle aktuálního nastavení v barech pro určitou hodinu dne. Uživatel se automaticky přihlásí po prvotním zapnutí. Pokud je přihlášený uživatel, může jedině sledovat aktuální stav světel a senzorů a konfiguraci procentuálního nastavení svítivosti (viz \autoref{Obr-Viz_uziv}). Pokud je přihlášený administrátor, může manuálně upravovat konfig procentuálního nastavení svítivosti pomocí táhel v reálném čase (viz \autoref{Obr-Viz_admin}). Administrátor může vypínat a zapínat všechny světla najednou pomocí tlačítka. Dále je mu umožněno odhlásit se tlačítkem odhlásit. 
+
+
+Jednotlivé stavy světel a senzorů:
+
+\includegraphics[width=.04\textwidth]{Figures/zelene.png}
+\dots světlo je aktivní
+
+\includegraphics[width=.04\textwidth]{Figures/zlute.png}
+\dots upozornění, že světlo pracuje na 100 \%
+
+\includegraphics[width=.04\textwidth]{Figures/cervene.png}
+\dots chyba světla (např. není zapojené)
+
+\includegraphics[width=.04\textwidth]{Figures/sede.png}
+\dots světlo je manuálně vypnuté (neaktivní) \\
+
+
+\includegraphics[width=.04\textwidth]{Figures/senzor_zeleny.png}
+\dots senzor je aktivní
+
+\includegraphics[width=.04\textwidth]{Figures/senzor_cerveny.png}
+\dots chyba senzoru (např. není zapojené nebo došlo k jeho poškození)
+
+
+\begin{figure}[H]
+    \centering\includegraphics[width=\textwidth]{Figures/PROMOTIC_admin_vizualizace.png}   
+    \caption{Vizualizace pro administrátora (v plné velikosti viz \hyperref[Sec-Prilohy]{Přílohy})}
+    \label{Obr-Viz_admin}
+\end{figure}
+
+\begin{figure}[H]
+    \centering\includegraphics[width=\textwidth]{Figures/PROMOTIC_uzivatel_vizualizace.png} 
+    \caption{Vizualizace pro uživatele (v plné velikosti viz \hyperref[Sec-Prilohy]{Přílohy})}
+    \label{Obr-Viz_uziv}
+\end{figure}
+
+
+\section{Chování za chybových situací}
+
+Při sběru dat ze senzoru se vyhodnocuje průměr a v případě odchylky se vyřadí nejvíce odchýlený senzor z průměru a poté se nahlásí jeho chyba. Světla budou pořád svítit na 100 \% (senzor, nebo z důvodu chyby více senzorů, posílá špatné hodnoty) –- tedy i přes den.
+
+\section{Požadavky na dokumentaci}
+
+Vhodné vytvořit manuál popisující vizualizaci a připojení jednotlivých částí systému.
+
+\section{Předávací podmínky}
+
+Možnost softwarového testu, kdy první projde jeden 24-hodinový cyklus v rámci pár minut a následně udělá simulaci snížení viditelnosti. (skvělá ukázka při prodeji).
+
+
+
+\endinput

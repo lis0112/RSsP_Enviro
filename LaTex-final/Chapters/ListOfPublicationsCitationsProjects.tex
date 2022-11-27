@@ -1,0 +1,19 @@
+\chapter*{Seznam vlastních publikací a ostatních výstupů}
+\label{sec:ListOfStudentsOwnPublicationActivitiesAndOtherOutcomes}
+\addcontentsline{toc}{chapter}{\nameref{sec:ListOfStudentsOwnPublicationActivitiesAndOtherOutcomes}}
+Pro sestavení seznamu vlastních publikací a ostatních výstupů, ať už souvisejících nebo nesouvisejících s disertační prací, lze s výhodou využít \verb|biblatex|. Jednotlivé bibliografické záznamy vlastních publikací označíme, v \verb|.bib| souboru, klíčovými slovy např.\ \verb|OwnRelated| a~\verb|OwnNonRelated|. Balík \verb|biblatex| umožňuje na základě těchto klíčových slov filtrovat jednotlivé záznamy.
+
+Stránku si přizpůsobte individuálním potřebám, ukázka formátování této stránky není závazná.
+
+\begin{refsection}
+\nocite{MyRelatedArticle1, MyRelatedArticle2}
+\printbibliography[keyword={OwnRelated}, heading=subbibintoc, title={Publikace a výstupy související s tématem práce}]
+\end{refsection}
+
+
+
+\chapter*{Seznam citací vlastních publikací}
+\label{sec:ListOfCitations}
+\addcontentsline{toc}{chapter}{\nameref{sec:ListOfCitations}}
+
+\endinput

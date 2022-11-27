@@ -1,0 +1,239 @@
+% Nejprve uvedeme tridu dokumentu s volbami
+\documentclass[czech,bachelor]{diploma}
+
+% .................................................................... %
+% ...................... ZAKLADNI BALICKY MAKER ...................... %
+
+% Dalsi doplnujici baliky maker
+\usepackage[autostyle=true,czech=quotes]{csquotes} % korektni sazba uvozovek, podpora pro balik biblatex
+\usepackage[backend=bibtex, style=numeric, alldates=iso]{biblatex} % bibliografie
+\usepackage{dcolumn} % sloupce tabulky s ciselnymi hodnotami
+\usepackage{subfig} % makra pro "podobrazky" a "podtabulky"
+\usepackage[cpp]{diplomalst}
+\usepackage{listings}
+\usepackage{color} %red, green, blue, yellow, cyan, magenta, black, white
+\usepackage{fixltx2e}
+\usepackage{hyperref}
+\usepackage[a4paper,pagesize]{typearea}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{setspace}
+\usepackage{multirow}
+
+% .................................................................... %
+% ...................... PRIDAVNE BALICKY MAKER ...................... %
+
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage[shortlabels]{enumitem}
+
+\usepackage{pifont} %more styles for bullets
+\usepackage{wrapfig}
+\usepackage{lscape}
+\usepackage{rotating}
+\usepackage{adjustbox}
+\usepackage{pdfpages}
+
+
+% .................................................................... %
+% ..................... PRIDANI BIBLATEX SOUBORU ..................... %
+
+\addbibresource{biblatex.bib}
+\addbibresource{coffee.bib}
+
+%\bibliography{biblatex-examples}
+
+
+% .................................................................... %
+% ..................... NASTAVENI PRO MATLAB KODY .................... %
+
+\definecolor{mygreen}{RGB}{28,172,0} % color values Red, Green, Blue
+\definecolor{mylilas}{RGB}{170,55,241}
+\lstset{language=Matlab,%
+    %basicstyle=\color{red},
+    breaklines=true,%
+    morekeywords={matlab2tikz},
+    keywordstyle=\color{blue},%
+    morekeywords=[2]{1}, keywordstyle=[2]{\color{black}},
+    identifierstyle=\color{black},%
+    stringstyle=\color{mylilas},
+    commentstyle=\color{mygreen},%
+    showstringspaces=false,%without this there will be a symbol in the places where there is a space
+    numbers=left,%
+    numberstyle={\tiny \color{black}},% size of the numbers
+    numbersep=9pt, % this defines how far the numbers are from the text
+    emph=[1]{for,end,break},emphstyle=[1]\color{red}, %some words to emphasise
+    %emph=[2]{word1,word2}, emphstyle=[2]{style},    
+}
+
+        
+% .................................................................... %
+% ................... NASTAVENI VLASTNOSTI STRANKY ................... %
+
+\geometry{
+    a4paper,
+    left=25mm,
+    right=25mm,
+    top=30mm,               % default 25mmm,
+    bottom=25mm,
+    headheight=15mm,        % default 5mm,
+    footskip=8mm
+}
+
+\addto\extrasczech{
+    \def\equationautorefname{Rovnice}%
+    \def\tableautorefname{Tabulka}%
+    \def\figureautorefname{Obrázek}%
+    \def\subfigureautorefname{Obrázek}%
+    \def\sectionautorefname{Bod}%
+}
+
+
+% .................................................................... %
+% ................ NASTAVENI ZAROVANI CISEL DLE CARKY ................ %
+
+% Novy druh tabulkoveho sloupce, ve kterem jsou cisla zarovnana podle desetinne carky
+\newcolumntype{d}[1]{D{,}{,}{#1}}
+
+
+
+% .................................................................... %
+% .................... NASTAVENI ZAKLADNICH UDAJU .................... %
+
+\newcommand{\Autor}{Jaroslav Mihál, Jáchym A. Kolebacz, Alec Smyček, Mariusz Lisztwan}
+\newcommand{\AutorLOGIN}{MIH0051, KOL0472, SMY0017, LIS0112}
+\newcommand{\AutorHlavicka}{J. A. Kolebacz (KOL0472)\\
+Jaroslav Mihál (MIH0051)\\
+Alec Smyček (SMY0017)\\
+Mariusz Lisztwan (LIS0112)}
+\newcommand{\Projekt}{Parkoviště -- zadání č. 2}
+\newcommand{\Vyucujici}{Ing. Jakub Němčík}
+\newcommand{\Predmet}{Řídicí systémy s počítači}
+\newcommand{\PredmetZkratka}{ŘSsP}
+
+
+
+% .................................................................... %
+% .................... NASTAVENI ZKRATEK S INDEXY .................... %
+
+%\newcommand{\COdva}{\texorpdfstring{CO\textsubscript{2}}{CO2} }
+%\newcommand{\mCTVER}{\texorpdfstring{m\textsuperscript{2}}{m2} }
+
+
+
+% .................................................................... %
+% ..................... NASTAVENI TITULNI STRANKY .................... %
+
+% Zacatek dokumentu
+\begin{document}
+
+
+\begin{titlepage}	
+    \begin{flushleft}
+    %\includegraphics[width=125mm]{D:/OneDrive - VSB-TUO/VSB/LaTex/logo}
+    %\includegraphics[width=125mm]{C:/Users/barau/OneDrive - VSB-TUO/VSB/LaTex/logo}
+    \includegraphics[width=125mm]{C:/LaTex/logo}
+    \end{flushleft}
+    
+    \vspace{\fill}
+    
+    \centering
+    \bf \Huge Semestrální projekt \\
+\vspace{10mm}
+\bf \Large \Projekt\\ %-------------------------------------------PREJMENOVAT
+
+    \vspace*{\fill}
+    \begin{flushleft}
+    
+    \begin{Large}
+        \bf Jméno: \rm \textit{\Autor}\\
+        \bf Login: \rm \textit{\AutorLOGIN}\\
+        \bf Typ studia: \rm \textit{prezenční}\\
+        \bf Cvičící: \rm \textit{\Vyucujici}\\ %------------------PREJMENOVAT
+        \bf Předmět: \rm \textit{\Predmet}\\ %--------------------PREJMENOVAT
+        \bf Datum: \rm \textit{\today}\\
+    \end{Large}	
+    \end{flushleft}
+\end{titlepage}
+	
+\MakeTitlePages
+
+
+% .................................................................... %
+% ......................... NASTAVENI ZAHLAVI ........................ %
+
+% Redefine the plain page style
+\fancypagestyle{plain}{%
+  \fancyhf{}%
+  \fancyhead[L]{\Predmet} %---------------------------------------PREJMENOVAT
+  \fancyhead[C]{\Projekt} %---------------------------------------PREJMENOVAT
+  \fancyhead[R]{\AutorHlavicka}
+  \fancyfoot[C]{\thepage}%
+  \renewcommand{\headrulewidth}{0.4pt}% Line at the header invisible
+}
+
+
+\setcounter{page}{2}
+\pagestyle{fancy}
+\lhead{\Predmet} %------------------------------------------------PREJMENOVAT
+\chead{\Projekt} %------------------------------------------------PREJMENOVAT
+\rhead{\AutorHlavicka}
+
+
+
+% .................................................................... %
+% ................. IMPORT SEZNAMU OBRAZKU A TABULEK ................. %
+
+% Jsou v praci obrazky? Pokud ano vysazime jejich seznam a odstrankujeme.
+% Pokud ne smazeme nasledujici dve makra.
+\listoffigures
+% \clearpage
+
+% Jsou v praci tabulky? Pokud ano vysazime jejich seznam a odstrankujeme.
+% Pokud ne smazeme nasledujici dve makra.
+% \listoftables
+%\clearpage
+
+
+% .................................................................... %
+% ........................ NASTAVENI ODSTAVCU ........................ %
+
+% A nasleduje text zaverecne prace.
+\setlength{\parindent}{0em}
+\setlength{\parskip}{1em}
+
+% .................................................................... %
+% ........................... IMPORT ZADANI .......................... %
+
+%\renewcommand{\thesection}{\arabic{section})}
+\input{Chapters/Zadani.tex}
+
+% \clearpage
+%\renewcommand{\thesection}{\Alph{section}.}
+
+% .................................................................... %
+% ................... IMPORT STRANEK S VYPRACOVANIM .................. %
+
+\input{Chapters/Ch1.tex}
+\input{Chapters/Ch2.tex}
+\input{Chapters/Ch3.tex}
+\input{Chapters/Ch4.tex}
+\input{Chapters/Ch5.tex}
+\input{Chapters/Zaver.tex}
+
+% \newpage
+
+
+% .................................................................... %
+% ..................... IMPORT SEZNAMU LITERATURY .................... %
+
+% Seznam literatury
+\printbibliography[title={Literatura}, heading=bibintoc]
+\input{Chapters/Appendix.tex}
+
+
+
+\end{document}
